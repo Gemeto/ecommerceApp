@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "997413041644",
+    "project_id": "fake-commerce-59994",
+    "storage_bucket": "fake-commerce-59994.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997413041644:android:883bbc50378054a6c6fcc9",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOqaDpi1ON_wyWYu_b4-iYms0aEHVfHfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
