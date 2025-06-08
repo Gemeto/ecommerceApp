@@ -21,7 +21,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.x' # Especifica tu versión de Flutter si es necesario, o usa 'stable'
+          flutter-version: '3.x'
           channel: 'stable'
 
       - name: Get Flutter dependencies
@@ -30,20 +30,8 @@ jobs:
       - name: Build Android App Bundle
         run: flutter build appbundle --release
 
-      # Opcional: Si prefieres un APK
-      # - name: Build Android APK
-      #   run: flutter build apk --release
-
-      # Opcional: Sube los artefactos de compilación (App Bundle o APK)
       - name: Upload App Bundle
         uses: actions/upload-artifact@v4
         with:
           name: app-release-bundle
           path: build/app/outputs/bundle/release/app-release.aab
-
-      # Opcional: Sube el APK si lo generaste
-      # - name: Upload APK
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: app-release-apk
-      #     path: build/app/outputs/flutter-apk/app-release.apk
